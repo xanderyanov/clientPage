@@ -1,0 +1,12 @@
+body {
+	font-size: 16px;
+}
+
+.mmxCP__itemRow:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.mmxCP__header {
+	position: sticky;
+	top: 0;
+}
