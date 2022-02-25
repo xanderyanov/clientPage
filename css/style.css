@@ -2,6 +2,10 @@ body {
 	font-size: 16px;
 }
 
+.mmxCP__itemRow {
+	padding: 5px 0;
+}
+
 .mmxCP__itemRow:nth-child(even) {
 	background-color: #f9f9f9;
 }
@@ -9,4 +13,28 @@ body {
 .mmxCP__header {
 	position: sticky;
 	top: 0;
+}
+
+.mmxCP__galeryItem {
+	padding: 0 5px 10px;
+}
+
+.mmxCP__galeryItemInner {
+	border: 1px solid #b6d4fe;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.mmxCP__galeryItemInner a {
+	display: flex;
+	flex-direction: column;
+}
+
+.mmxCP__galeryItem img {
+	display: block;
+	width: 100%;
+}
+
+.mmxCP__galeryItem span {
+	font-size: 0.75rem;
 }

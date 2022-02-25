@@ -11,7 +11,12 @@
 
 		<link rel="stylesheet" href="css/style.css" />
 
+		<link rel="stylesheet" href="css/media.css" />
+
 		<script src="js/bootstrap.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
 		<script src="js/main.js" defer></script>
 	</head>
@@ -70,10 +75,10 @@
 					</div>
 				</div>
 				<div class="col-6 mt-3">
-					<div class="adminBS5__dateOuter d-flex justify-content-start">
-						<div class="form-group form-group_mx0 col-5 regInputWrapper_100 pe-sm-3 d-flex align-items-center">
-							<label class="control-label mmx-text-left">С:</label>
-							<div class="col-sm-0 ms-2 col-10">
+					<div class="adminBS5__dateOuter d-flex justify-content-start flex-column flex-lg-row">
+						<div class="col-12 col-lg-5 regInputWrapper_100 pe-sm-3 d-flex align-items-center mb-2 mb-lg-0">
+							<label class="control-label mmx-text-left col-3">С:</label>
+							<div class="col-9">
 								<input
 									class="form-control text-box single-line datetimexcal"
 									id="ViewSettings_StartStr"
@@ -89,9 +94,9 @@
 							</div>
 						</div>
 
-						<div class="form-group form-group_mx0 col-5 regInputWrapper_100 pe-sm-3 d-flex align-items-center">
-							<label class="control-label mmx-text-left">По:</label>
-							<div class="col-sm-0 ms-2 col-10">
+						<div class="col-12 col-lg-5 regInputWrapper_100 pe-sm-3 d-flex align-items-center">
+							<label class="control-label mmx-text-left col-3">По:</label>
+							<div class="col-9">
 								<input
 									class="form-control text-box single-line datetimexcal"
 									id="ViewSettings_EndStr"
@@ -113,22 +118,22 @@
 			<div class="mmxCP__body row py-3">
 				<div class="mmxCP__item pb-3 mb-3 border-bottom border-primary">
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Дата визита:</strong></div>
-						<div class="col-6">24-02-2022</div>
+						<div class="col-4"><strong>Дата визита:</strong></div>
+						<div class="col-8">24-02-2022</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Специалист:</strong></div>
-						<div class="col-6">Жукова Светлана Юрьевна</div>
+						<div class="col-4"><strong>Специалист:</strong></div>
+						<div class="col-8">Жукова Светлана Юрьевна</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Процедура:</strong></div>
-						<div class="col-6">
+						<div class="col-4"><strong>Процедура:</strong></div>
+						<div class="col-8">
 							<b>Fotona: 4D Омоложение</b>:<br />Лицо + шея + декольте 23 000 * 1 - 0% = 23 000 <br />
 						</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Товары:</strong></div>
-						<div class="col-6">
+						<div class="col-4"><strong>Товары:</strong></div>
+						<div class="col-8">
 							<b>Babor Сахарный пилинг с маслом аргана Sugar Oil Peeling</b>
 							2 450 * 1 - 0% = 2 450 <br />
 							<b
@@ -138,36 +143,110 @@
 						</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Пополнения:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Фотогалерея:</strong></div>
+						<div class="col-8">
+							<div class="mmxCP__galery">
+								<div class="row">
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/01.JPG" data-fancybox="gallery">
+												<img src="img/01.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/02.JPG" data-fancybox="gallery">
+												<img src="img/02.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/01.JPG" data-fancybox="gallery">
+												<img src="img/01.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/02.JPG" data-fancybox="gallery">
+												<img src="img/02.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/01.JPG" data-fancybox="gallery">
+												<img src="img/01.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/02.JPG" data-fancybox="gallery">
+												<img src="img/02.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/01.JPG" data-fancybox="gallery">
+												<img src="img/01.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+									<div class="mmxCP__galeryItem col-6 col-sm-4 col-md-3 col-lg-2">
+										<div class="mmxCP__galeryItemInner">
+											<a href="img/02.JPG" data-fancybox="gallery">
+												<img src="img/02.JPG" alt="" />
+											</a>
+											<span>24-02-2022 16-30</span>
+										</div>
+									</div>
+								</div>
+								-->
+							</div>
+						</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Тара:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Пополнения:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Нал:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Тара:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Карта:</strong></div>
-						<div class="col-6">10 000 р</div>
+						<div class="col-4"><strong>Нал:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Вирт:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Карта:</strong></div>
+						<div class="col-8">10 000 р</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Под з/п:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Вирт:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Долг:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Под з/п:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Касса:</strong></div>
-						<div class="col-6">1</div>
+						<div class="col-4"><strong>Долг:</strong></div>
+						<div class="col-8"></div>
+					</div>
+					<div class="row mmxCP__itemRow">
+						<div class="col-4"><strong>Касса:</strong></div>
+						<div class="col-8">1</div>
 					</div>
 					<div class="row mmxCP__itemRow">
 						<div class="col-12">
@@ -179,22 +258,22 @@
 				</div>
 				<div class="mmxCP__item pb-3 mb-3 border-bottom border-primary">
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Дата визита:</strong></div>
-						<div class="col-6">24-02-2022</div>
+						<div class="col-4"><strong>Дата визита:</strong></div>
+						<div class="col-8">24-02-2022</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Специалист:</strong></div>
-						<div class="col-6">Жукова Светлана Юрьевна</div>
+						<div class="col-4"><strong>Специалист:</strong></div>
+						<div class="col-8">Жукова Светлана Юрьевна</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Процедура:</strong></div>
-						<div class="col-6">
+						<div class="col-4"><strong>Процедура:</strong></div>
+						<div class="col-8">
 							<b>Fotona: 4D Омоложение</b>:<br />Лицо + шея + декольте 23 000 * 1 - 0% = 23 000 <br />
 						</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Товары:</strong></div>
-						<div class="col-6">
+						<div class="col-4"><strong>Товары:</strong></div>
+						<div class="col-8">
 							<b>Babor Сахарный пилинг с маслом аргана Sugar Oil Peeling</b>
 							2 450 * 1 - 0% = 2 450 <br />
 							<b
@@ -203,301 +282,38 @@
 							>7 450 * 1 - 0% = 7 450
 						</div>
 					</div>
+
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Пополнения:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Пополнения:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Тара:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Тара:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Нал:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Нал:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Карта:</strong></div>
-						<div class="col-6">10 000 р</div>
+						<div class="col-4"><strong>Карта:</strong></div>
+						<div class="col-8">10 000 р</div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Вирт:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Вирт:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Под з/п:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Под з/п:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Долг:</strong></div>
-						<div class="col-6"></div>
+						<div class="col-4"><strong>Долг:</strong></div>
+						<div class="col-8"></div>
 					</div>
 					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Касса:</strong></div>
-						<div class="col-6">1</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-12">
-							<button type="button" class="btn btn-success btn-lg">Сохранить</button>
-							<button type="button" class="btn btn-warning">Редактировать</button>
-							<button type="button" class="btn btn-danger btn-sm">Удалить</button>
-						</div>
-					</div>
-				</div>
-				<div class="mmxCP__item pb-3 mb-3 border-bottom border-primary">
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Дата визита:</strong></div>
-						<div class="col-6">24-02-2022</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Специалист:</strong></div>
-						<div class="col-6">Жукова Светлана Юрьевна</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Процедура:</strong></div>
-						<div class="col-6">
-							<b>Fotona: 4D Омоложение</b>:<br />Лицо + шея + декольте 23 000 * 1 - 0% = 23 000 <br />
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Товары:</strong></div>
-						<div class="col-6">
-							<b>Babor Сахарный пилинг с маслом аргана Sugar Oil Peeling</b>
-							2 450 * 1 - 0% = 2 450 <br />
-							<b
-								>Babor Ампульный курс для коррекции тона кожи Brightening Intense Skin Tone Corrector Ampoule Treatment,
-								28 шт.</b
-							>7 450 * 1 - 0% = 7 450
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Пополнения:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Тара:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Нал:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Карта:</strong></div>
-						<div class="col-6">10 000 р</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Вирт:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Под з/п:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Долг:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Касса:</strong></div>
-						<div class="col-6">1</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-12">
-							<button type="button" class="btn btn-success btn-lg">Сохранить</button>
-							<button type="button" class="btn btn-warning">Редактировать</button>
-							<button type="button" class="btn btn-danger btn-sm">Удалить</button>
-						</div>
-					</div>
-				</div>
-				<div class="mmxCP__item pb-3 mb-3 border-bottom border-primary">
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Дата визита:</strong></div>
-						<div class="col-6">24-02-2022</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Специалист:</strong></div>
-						<div class="col-6">Жукова Светлана Юрьевна</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Процедура:</strong></div>
-						<div class="col-6">
-							<b>Fotona: 4D Омоложение</b>:<br />Лицо + шея + декольте 23 000 * 1 - 0% = 23 000 <br />
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Товары:</strong></div>
-						<div class="col-6">
-							<b>Babor Сахарный пилинг с маслом аргана Sugar Oil Peeling</b>
-							2 450 * 1 - 0% = 2 450 <br />
-							<b
-								>Babor Ампульный курс для коррекции тона кожи Brightening Intense Skin Tone Corrector Ampoule Treatment,
-								28 шт.</b
-							>7 450 * 1 - 0% = 7 450
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Пополнения:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Тара:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Нал:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Карта:</strong></div>
-						<div class="col-6">10 000 р</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Вирт:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Под з/п:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Долг:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Касса:</strong></div>
-						<div class="col-6">1</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-12">
-							<button type="button" class="btn btn-success btn-lg">Сохранить</button>
-							<button type="button" class="btn btn-warning">Редактировать</button>
-							<button type="button" class="btn btn-danger btn-sm">Удалить</button>
-						</div>
-					</div>
-				</div>
-				<div class="mmxCP__item pb-3 mb-3 border-bottom border-primary">
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Дата визита:</strong></div>
-						<div class="col-6">24-02-2022</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Специалист:</strong></div>
-						<div class="col-6">Жукова Светлана Юрьевна</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Процедура:</strong></div>
-						<div class="col-6">
-							<b>Fotona: 4D Омоложение</b>:<br />Лицо + шея + декольте 23 000 * 1 - 0% = 23 000 <br />
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Товары:</strong></div>
-						<div class="col-6">
-							<b>Babor Сахарный пилинг с маслом аргана Sugar Oil Peeling</b>
-							2 450 * 1 - 0% = 2 450 <br />
-							<b
-								>Babor Ампульный курс для коррекции тона кожи Brightening Intense Skin Tone Corrector Ampoule Treatment,
-								28 шт.</b
-							>7 450 * 1 - 0% = 7 450
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Пополнения:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Тара:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Нал:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Карта:</strong></div>
-						<div class="col-6">10 000 р</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Вирт:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Под з/п:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Долг:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Касса:</strong></div>
-						<div class="col-6">1</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-12">
-							<button type="button" class="btn btn-success btn-lg">Сохранить</button>
-							<button type="button" class="btn btn-warning">Редактировать</button>
-							<button type="button" class="btn btn-danger btn-sm">Удалить</button>
-						</div>
-					</div>
-				</div>
-				<div class="mmxCP__item pb-3 mb-3 border-bottom border-primary">
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Дата визита:</strong></div>
-						<div class="col-6">24-02-2022</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Специалист:</strong></div>
-						<div class="col-6">Жукова Светлана Юрьевна</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Процедура:</strong></div>
-						<div class="col-6">
-							<b>Fotona: 4D Омоложение</b>:<br />Лицо + шея + декольте 23 000 * 1 - 0% = 23 000 <br />
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Товары:</strong></div>
-						<div class="col-6">
-							<b>Babor Сахарный пилинг с маслом аргана Sugar Oil Peeling</b>
-							2 450 * 1 - 0% = 2 450 <br />
-							<b
-								>Babor Ампульный курс для коррекции тона кожи Brightening Intense Skin Tone Corrector Ampoule Treatment,
-								28 шт.</b
-							>7 450 * 1 - 0% = 7 450
-						</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Пополнения:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Тара:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Нал:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Карта:</strong></div>
-						<div class="col-6">10 000 р</div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Вирт:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Под з/п:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Долг:</strong></div>
-						<div class="col-6"></div>
-					</div>
-					<div class="row mmxCP__itemRow">
-						<div class="col-6"><strong>Касса:</strong></div>
-						<div class="col-6">1</div>
+						<div class="col-4"><strong>Касса:</strong></div>
+						<div class="col-8">1</div>
 					</div>
 					<div class="row mmxCP__itemRow">
 						<div class="col-12">
